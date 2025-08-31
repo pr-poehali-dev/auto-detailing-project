@@ -104,15 +104,15 @@ const Index = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-accent to-white py-20">
+      <section className="bg-gradient-to-r from-black to-gray-800 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-5xl md:text-6xl font-bold text-secondary mb-6">
+            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
               AIM DETAILING
               <br />
               <span className="text-primary">Полный спектр услуг</span>
             </h1>
-            <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
               От керамических покрытий до технического обслуживания. 
               Химчистка, тонировка, шумоизоляция и установка акустики.
             </p>
@@ -146,7 +146,7 @@ const Index = () => {
             {services.map((service, index) => (
               <Card key={index} className="text-center hover:shadow-lg transition-shadow bg-white">
                 <CardHeader className="pb-4">
-                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center mx-auto mb-4 border border-primary">
                     <Icon name={service.icon} size={32} className="text-primary" />
                   </div>
                   <CardTitle className="text-xl text-secondary">{service.title}</CardTitle>
@@ -240,8 +240,8 @@ const Index = () => {
                 </div>
               </div>
             </div>
-            <div className="bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl h-80 flex items-center justify-center">
-              <Icon name="Award" size={96} className="text-primary/60" />
+            <div className="bg-gradient-to-br from-red-100 to-gray-100 rounded-2xl h-80 flex items-center justify-center border-2 border-primary">
+              <Icon name="Award" size={96} className="text-primary" />
             </div>
           </div>
         </div>
@@ -260,24 +260,24 @@ const Index = () => {
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8">
-            <Card className="text-center p-8">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <Card className="text-center p-8 hover:shadow-xl transition-shadow border border-gray-100">
+              <div className="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center mx-auto mb-4 border border-primary">
                 <Icon name="Phone" size={32} className="text-primary" />
               </div>
               <h3 className="text-xl font-bold text-secondary mb-2">Телефон</h3>
               <p className="text-muted-foreground">+7 (999) 123-45-67</p>
             </Card>
 
-            <Card className="text-center p-8">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <Card className="text-center p-8 hover:shadow-xl transition-shadow border border-gray-100">
+              <div className="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center mx-auto mb-4 border border-primary">
                 <Icon name="MapPin" size={32} className="text-primary" />
               </div>
               <h3 className="text-xl font-bold text-secondary mb-2">Адрес</h3>
               <p className="text-muted-foreground">ул. Автомобильная, 15<br />Москва, 123456</p>
             </Card>
 
-            <Card className="text-center p-8">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <Card className="text-center p-8 hover:shadow-xl transition-shadow border border-gray-100">
+              <div className="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center mx-auto mb-4 border border-primary">
                 <Icon name="Clock" size={32} className="text-primary" />
               </div>
               <h3 className="text-xl font-bold text-secondary mb-2">Время работы</h3>
