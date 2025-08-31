@@ -27,6 +27,42 @@ const Index = () => {
       description: "Восстановление блеска и устранение дефектов",
       price: "от 15 000 ₽",
       icon: "Sparkles"
+    },
+    {
+      title: "Химчистка салона",
+      description: "Глубокая очистка сидений, ковриков и панели",
+      price: "от 8 000 ₽",
+      icon: "Spray"
+    },
+    {
+      title: "Шумоизоляция авто",
+      description: "Установка материалов для снижения шума",
+      price: "от 20 000 ₽",
+      icon: "Volume"
+    },
+    {
+      title: "Установка акустики",
+      description: "Монтаж и настройка аудиосистемы",
+      price: "от 15 000 ₽",
+      icon: "Speaker"
+    },
+    {
+      title: "Мойка днища",
+      description: "Очистка и антикоррозийная обработка",
+      price: "от 2 500 ₽",
+      icon: "Waves"
+    },
+    {
+      title: "Тонировка стекол",
+      description: "Профессиональная тонировка по ГОСТу",
+      price: "от 6 000 ₽",
+      icon: "Sun"
+    },
+    {
+      title: "Замена масла и фильтров",
+      description: "Техническое обслуживание двигателя",
+      price: "от 3 000 ₽",
+      icon: "Wrench"
     }
   ];
 
@@ -42,8 +78,12 @@ const Index = () => {
       <nav className="bg-white shadow-sm border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <div className="text-2xl font-bold text-secondary">
-              AUTO DETAILING
+            <div className="flex items-center">
+              <img 
+                src="https://cdn.poehali.dev/files/28b50d8e-6a5d-43a4-b819-df801c25998c.jpeg" 
+                alt="AIM DETAILING"
+                className="h-10 w-auto"
+              />
             </div>
             <div className="hidden md:flex space-x-8">
               <a href="#services" className="text-muted-foreground hover:text-secondary transition-colors">
@@ -68,13 +108,13 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-5xl md:text-6xl font-bold text-secondary mb-6">
-              Премиум детейлинг
+              AIM DETAILING
               <br />
-              <span className="text-primary">вашего автомобиля</span>
+              <span className="text-primary">Полный спектр услуг</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-              Профессиональная защита и восстановление лакокрасочного покрытия. 
-              Керамические покрытия и защитные пленки от ведущих производителей.
+              От керамических покрытий до технического обслуживания. 
+              Химчистка, тонировка, шумоизоляция и установка акустики.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="text-lg px-8 py-6">
@@ -102,7 +142,7 @@ const Index = () => {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
             {services.map((service, index) => (
               <Card key={index} className="text-center hover:shadow-lg transition-shadow bg-white">
                 <CardHeader className="pb-4">
@@ -251,7 +291,7 @@ const Index = () => {
       <footer className="bg-secondary text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <div className="text-2xl font-bold mb-4">AUTO DETAILING</div>
+            <div className="text-2xl font-bold mb-4">AIM DETAILING</div>
             <p className="text-gray-300 mb-6">
               Профессиональный уход за вашим автомобилем
             </p>
